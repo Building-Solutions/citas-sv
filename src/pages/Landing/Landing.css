@@ -1,0 +1,24 @@
+.landing {
+  /* margin-top: -3rem; Apply after banner is selected */
+}
+
+.banner-container {
+  margin-left: -3rem;
+  width: 79.2vw;
+}
+
+.banner-container img {
+  height: 20rem;
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 15rem;
+}

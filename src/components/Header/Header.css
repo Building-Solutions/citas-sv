@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+}
+
+.header-space-between {
+  justify-content: space-between;
+}
+
+.header-flex-end {
+  justify-content: flex-end;
+}
+
+.imgLogo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.evitarErrorHerde {
+  width: 35%;
+  align-content: flex-end !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}

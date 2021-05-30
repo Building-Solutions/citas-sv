@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/filename-case */
+
 import { useContext } from 'react';
 import { Form, Input, Button, Select } from 'antd';
 

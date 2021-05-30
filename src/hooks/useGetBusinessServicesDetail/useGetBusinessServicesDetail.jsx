@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/filename-case */
+
 
 import { Image, Row, Typography } from 'antd';
 import React, { useContext } from 'react';

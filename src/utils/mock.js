@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/filename-case */
+
 export const business = [
   {
     id: 1,

@@ -1,5 +1,4 @@
 import { Table, message, Spin, Input, Button, Row } from 'antd';
-import e from 'cors';
 
 import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router';
@@ -112,7 +111,10 @@ const ServicesTable = props => {
       {isLoading && <Spin />}
       {dataAPI.success && (
         <Table
-          style={{ width: '-webkit-fill-available', height: '-webkit-fill-available' }}
+          style={{
+            width: '-webkit-fill-available',
+            height: '-webkit-fill-available'
+          }}
           rowSelection={rowSelection}
           pagination={paginationConfig}
           columns={columns}

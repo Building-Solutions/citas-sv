@@ -25,6 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "formatG": "prettier --write .",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,29 +37,7 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ],
-    "plugins": [
-      "unicorn",
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": "error",
-      "no-unused-vars": "warn",
-      "unicorn/filename-case": [
-        "error",
-        {
-          "cases": {
-            "pascalCase": true
-          },
-          "ignore": [
-            "^index\\.js$",
-            "^index\\.jsx$",
-            "^App.test\\.js$",
-            "^www\\.js$"
-          ]
-        }
-      ]
-    }
+    ]
   },
   "browserslist": {
     "production": [

@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/filename-case */
+
 import { useEffect, useState } from 'react';
 
 import { getData } from '../../api/baseClient';

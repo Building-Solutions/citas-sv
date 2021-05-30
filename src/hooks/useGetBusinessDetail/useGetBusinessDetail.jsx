@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/filename-case */
+
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
 import { Button, Col, Image, Row, Typography } from 'antd';
 import React, { useContext, useEffect } from 'react';

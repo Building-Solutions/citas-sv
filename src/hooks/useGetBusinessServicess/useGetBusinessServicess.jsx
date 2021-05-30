@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/filename-case */
+
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 

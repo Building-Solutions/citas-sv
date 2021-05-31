@@ -18,8 +18,8 @@ import { setCookie } from '../../utils/Cookies';
 const { Item, SubMenu, ItemGroup } = Menu;
 
 const Header = ({ hasLogo = false }) => {
-  const { setBusinessName, user } = useContext(GlobalContext);
-  const [AccesType, setAccesType] = useState('C');
+  const { setBusinessName, user, AccesType } = useContext(GlobalContext);
+  console.log('header', AccesType);
   const className = hasLogo ? 'header header-space-between' : 'header header-flex-end';
   const { push } = useHistory();
 
@@ -37,22 +37,11 @@ const Header = ({ hasLogo = false }) => {
     }
   };
 
-  useEffect(() => {
-    const accesType = isEmpty(user)
-      ? 'C'
-      : user.hasOwnProperty('type')
-      ? user.type
-      : user.hasOwnProperty('access')
-      ? user.access.type
-      : 'C';
-    setAccesType(accesType);
-  }, [AccesType]);
-
   return (
     <Layout.Header className={className}>
       {hasLogo && (
         <div>
-          <img className="imgLogo" src="https://donejs.com/static/img/react-logo.png" alt="Logo" />
+          <img className="imgLogo" src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
         </div>
       )}
       <Menu className="evitarErrorHerde" theme="dark" mode="horizontal" onClick={handleMenuItem}>
